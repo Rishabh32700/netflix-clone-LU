@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+body{
+    background-color: black;
+}
+
+.mainNetflixContainer{
+    /* border: 2px solid red; */
+    /* padding: 0rem 2rem; */
+   
+  
+
+}
+
+.backgroundContainer{
+    background-image: url("./bannerImage.jpg");
+    filter: blur(16px);
+    height: 100vh;
+    position: relative;
+}
+
+.pinkOverlay{
+    background-color: rgba(104, 3, 20, 0.404);
+    height: 100%;
+    width: 100%;
+}
+
+.contentContainer{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 0rem 2rem;
+}
+
+nav{
+    /* border: 2px solid green; */
+    height: 20vh;
+}
+
+.upperNavbarSection{
+    /* border: 2px solid blue; */
+    display: flex;
+    height: 50%;
+}
+
+.upperNavbarLeftSection{
+    /* border: 2px solid red; */
+    width: 50%;
+
+}
+
+.netflixLogo{
+    width: 29%;
+}
+
+.upperNavbarRightSection{
+    /* border: 2px solid green; */
+    width: 50%;
+}
+
+.navBarButtonContainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 2px solid green; */
+    height: 100%;
+}
+
+.languageButton{
+    display: flex;
+    padding: .4rem .8rem;
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+
+}
+
+.signinButton{
+    background-color: #fff;
+    padding: .4rem .8rem;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    font-size: 1rem;
+
+}
+
+.languageButton p{
+    margin-left: 5px;
+}
+
+.lowerNavbarSection{
+    /* border: 2px solid red; */
+    height: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.menuList{
+    /* border: 2px solid green; */
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    background: rgba(0,0,0,.5);
+    box-shadow: 2px 3px 14px rgba(0, 0, 0, .5);
+    height: 7vh;
+}
+
+.menuList li{
+    /* border: 2px solid red; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bannerSection{
+    /* border: 2px solid red; */
+    height: 90vh;
+    background-image: url("./bannerImage.jpg");
+    background-size: 100% 100%;
+    border-radius: 20px;
+    position: relative;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient( rgba(0,0,0,.3),rgba(0,0,0,.7), black );
+    border-radius: 20px;
+
+}
+
+.bannerContainer{
+    /* border: 2px solid red; */
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
+
+.bannerContainer h2{
+    font-size: 4rem;
+    width: 50%;
+    text-align: center;
+}
+
+.bannerContainer h4{
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+.bannerContainer p{
+    font-size: 1rem;
+    margin: 20px;
+}
+
+.inputContainer{
+    /* border: 2px solid green; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.emailInputBox{
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 60%;
+    color: white;
+    font-size: 1rem;
+}
+
+.emailInputBox::placeholder{
+    color: white;
+}
+
+.getStartedButton{
+    width: 30%;
+    background-color: red;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
