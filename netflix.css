@@ -203,3 +203,177 @@ nav{
     font-size: 1.2rem;
     font-weight: 900;
 }
+
+.carouselSection, 
+.planSection,
+.reasonToJoinSection,
+.faqSection,
+.getStartedSection{
+    /* border: 2px solid red; */
+    color: white;
+    
+}
+
+.carouselSection h2,
+.planSection h2,
+.reasonToJoinSection h2,
+.faqSection h2{
+    /* border: 2px solid red; */
+    margin-left: 5rem;
+    font-size: 2.5rem;
+}
+
+.carouselCardConatiner,
+.plansConatiner,
+.reasonsConatiner,
+.faqCardsContainer{
+    /* border: 2px solid green; */
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+}
+
+
+.carouselCard{
+    width: 12%;
+    /* border: 2px solid yellow; */
+    height: 38vh;
+    border-radius: 20px;
+    position: relative;
+}
+
+.carouselNumberContainer{
+    position: absolute;
+    left: -20px;
+}
+
+.carouselNumberContainer span{
+    color: rgba(0, 0, 0, 0.8);
+    -webkit-text-stroke: 0.125rem rgb(255, 255, 255);
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    font-size: 4rem;
+}
+
+.carouselImageContainer{
+    width: 100%;
+    height: 100%;
+}
+
+.carouselImageContainer img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.planCard, .reasonCard{
+    /* border: 2px solid green; */
+    height: 38vh;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1rem 1rem;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.372);
+
+}
+
+.planCard1{
+    background: linear-gradient(149deg, #1C4072 6.96%, #172B47 40.17%, #120c1f 73.39%);
+}
+
+.planCard2{
+    background: linear-gradient(149deg, #1D529D 6.96%, #233371 40.17%, #120c1f 73.39%);
+}
+
+.planCard3{
+    background: linear-gradient(149deg, #792A95 6.96%, #38216C 40.17%, #120c1f 73.39%);
+}
+
+.planCard4{
+    background: linear-gradient(149deg, #922556 6.96%, #391945 40.17%, #120c1f 73.39%);
+}
+
+.planCard h2{
+    margin-left: 0;
+    font-size: 1.5rem;
+}
+
+.planCard h4{
+    font-size: 1.3rem;
+}
+
+.planCard p{
+    font-size: 1rem;
+}
+
+.reasonCard{
+    background: rgb(47, 47, 47);
+    border: none;
+    height: 33vh;
+}
+
+.reasonCard h2{
+    font-size: 1.5rem;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.reasonCard p{
+    font-size: 0.9rem;
+}
+
+.reasonCardLowerContent{
+    display: flex;
+    justify-content: end;
+}
+
+.reasonCardLowerContent svg{
+    height: 50px;
+    width: 50px;
+}
+
+.faqCard{
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+.faqQuestion,
+.faqAnswer{
+    padding: 2rem;
+    border-radius: 10px;
+    /* border: 1px solid white; */
+    margin-bottom: 20px;
+    background-color: #2e2e2e;
+}
+
+.faqQuestion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faqQuestion span{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.faqAnswer {
+    display: none;
+
+}
+
+.faqCard:hover{
+    cursor: pointer;
+}
+
+/* Jab faqQuestion p hover ho toh faqAnswer dikh jaye */
+.faqCard:hover .faqAnswer {
+    display: block;
+    cursor: pointer;
+}
+
+.faqCardsContainer{
+    flex-direction: column;
+}
