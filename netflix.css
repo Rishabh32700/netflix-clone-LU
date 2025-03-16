@@ -2,7 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+* a{
+    color: white;
+    text-decoration: none;
 }
 
 body{
@@ -40,6 +46,8 @@ body{
 nav{
     /* border: 2px solid green; */
     height: 20vh;
+    position: fixed;
+    z-index: 10000;
 }
 
 .upperNavbarSection{
@@ -113,8 +121,9 @@ nav{
     display: flex;
     justify-content: space-evenly;
     border-radius: 50px;
-    background: rgba(0,0,0,.5);
+    background: rgba(0,0,0,.7);
     box-shadow: 2px 3px 14px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(7px);
     height: 7vh;
 }
 
@@ -123,6 +132,10 @@ nav{
     height: 100%;
     display: flex;
     align-items: center;
+}
+
+.sectionsContainer{
+    margin-top: 20vh;
 }
 
 .bannerSection{
@@ -376,4 +389,16 @@ nav{
 
 .faqCardsContainer{
     flex-direction: column;
+}
+
+.getStartedSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.getStartedSection p{
+    margin-bottom: 1rem
 }
