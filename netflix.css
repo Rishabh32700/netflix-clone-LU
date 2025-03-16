@@ -15,14 +15,6 @@ body{
     background-color: black;
 }
 
-.mainNetflixContainer{
-    /* border: 2px solid red; */
-    /* padding: 0rem 2rem; */
-   
-  
-
-}
-
 .backgroundContainer{
     background-image: url("./bannerImage.jpg");
     filter: blur(16px);
